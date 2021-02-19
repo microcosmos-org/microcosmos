@@ -1,0 +1,17 @@
+{
+  "name": "render-json-sample",
+  "version": "0.0.1",
+  "description": "Microcosmos project",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [],
+  "author": "micro node",
+  "license": "ISC",
+  "dependencies": {
+    "microcosmos.js": "../../"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-google": "^0.14.0"
+  }
+}

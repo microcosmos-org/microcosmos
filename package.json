@@ -1,0 +1,32 @@
+{
+  "name": "microcosmos.js",
+  "version": "0.0.8",
+  "description": "Experimental HTTP/2 API Framework",
+  "main": "index.js",
+  "type": "module",
+  "keywords": [],
+  "author": "microcosmos-org",
+  "license": "MIT",
+  "dependencies": {
+    "glob": "^7.1.6",
+    "redis": "^3.0.2"
+  },
+  "devDependencies": {
+    "eslint": "^7.20.0",
+    "eslint-config-google": "^0.14.0"
+  },
+  "directories": {
+    "example": "examples"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/microcosmos-org/microcosmos.git"
+  },
+  "bugs": {
+    "url": "https://github.com/microcosmos-org/microcosmos/issues"
+  },
+  "homepage": "https://github.com/microcosmos-org/microcosmos#readme"
+}
