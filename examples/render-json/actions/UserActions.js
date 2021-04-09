@@ -6,7 +6,7 @@ export default class UserActions extends ApplicationActions {
   }
 
   show() {
-    this.endJSON({ message: 'Hello from /users/show' });
+    this.render.json({ message: 'Hello from /users/show' });
   }
 
   /**
@@ -23,6 +23,6 @@ export default class UserActions extends ApplicationActions {
    */
   emitEvent() {
     this.streamer.emitEvent('user_event', this.params.searchParams.get('event'));
-    this.endTXT('ok');
+    this.render.txt('emitted');
   }
 }

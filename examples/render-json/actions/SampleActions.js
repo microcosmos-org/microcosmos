@@ -6,11 +6,11 @@ export default class SampleActions extends ApplicationActions {
   }
 
   hello() {
-    this.endJSON({ test: 'HELLO FROM SYNC' });
+    this.render.json({ test: 'HELLO FROM SYNC' });
   }
 
   async helloFromAsync() {
     // use await etc..
-    this.endJSON({ test: 'HELLO FROM ASYNC' });
+    this.render.json({ test: 'HELLO FROM ASYNC' });
   }
 }

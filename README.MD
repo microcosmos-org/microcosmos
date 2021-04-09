@@ -31,7 +31,7 @@ Get started:
     }
   
     show() {
-      this.endJSON({ message: 'Hello from /users/show' });
+      this.render.json({ message: 'Hello from /users/show' });
     }
   }
   ```
@@ -63,7 +63,7 @@ static get routeName() {
 action `show()` defined as:
 ```javascript
 show() {
-  this.endJSON({ message: 'Hello from /users/show' });
+  this.render.json({ message: 'Hello from /users/show' });
 }
 ```
 
@@ -74,7 +74,7 @@ Actions can be sync or async
 ```javascript
 async show() {
   const result = await someAction();
-  this.endJSON({ message: 'Hello from /users/show' });
+  this.render.json({ message: 'Hello from /users/show' });
 }
 ```
 
@@ -124,7 +124,7 @@ export default class UserActions extends ApplicationActions {
   // Emit SSE
   emitEvent() {
     this.streamer.emitEvent('user_event', this.params.searchParams.get('event'));
-    this.endTXT('ok');
+    this.render.txt('ok');
   }
 }
 ```
